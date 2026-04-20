@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#727d78",
+                        "on-tertiary": "#fff7f7",
+                        "surface-bright": "#f6faf6",
+                        "primary-fixed": "#93f2d3",
+                        "tertiary-fixed": "#fdc2d4",
+                        "on-primary-container": "#005b48",
+                        "on-surface-variant": "#57615d",
+                        "background": "#f6faf6",
+                        "error": "#a83836",
+                        "surface-container-low": "#eff5f0",
+                        "tertiary-fixed-dim": "#eeb4c6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#4f2836",
+                        "primary": "#006c56",
+                        "on-primary-fixed": "#004737",
+                        "secondary-container": "#cde5ff",
+                        "error-container": "#fa746f",
+                        "on-secondary-fixed-variant": "#2c5f87",
+                        "on-error": "#fff7f6",
+                        "secondary": "#31638a",
+                        "primary-dim": "#005f4b",
+                        "surface": "#f6faf6",
+                        "surface-dim": "#d2ddd6",
+                        "on-secondary-container": "#20567c",
+                        "primary-fixed-dim": "#85e3c6",
+                        "surface-container-high": "#e1eae5",
+                        "inverse-surface": "#0a0f0d",
+                        "surface-container": "#e8f0ea",
+                        "tertiary": "#7f5261",
+                        "on-tertiary-container": "#653b4a",
+                        "error-dim": "#67040d",
+                        "primary-container": "#93f2d3",
+                        "on-tertiary-fixed-variant": "#6f4453",
+                        "tertiary-dim": "#724655",
+                        "tertiary-container": "#fdc2d4",
+                        "surface-variant": "#dae5df",
+                        "outline-variant": "#aab4af",
+                        "on-background": "#2b3530",
+                        "surface-container-highest": "#dae5df",
+                        "inverse-on-surface": "#999e9b",
+                        "on-secondary": "#f6f9ff",
+                        "on-error-container": "#6e0a12",
+                        "secondary-fixed": "#cde5ff",
+                        "inverse-primary": "#93f2d3",
+                        "on-secondary-fixed": "#004369",
+                        "secondary-dim": "#22577e",
+                        "on-primary": "#e4fff3",
+                        "surface-tint": "#006c56",
+                        "on-surface": "#2b3530",
+                        "secondary-fixed-dim": "#b1d9ff",
+                        "on-primary-fixed-variant": "#006651"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#006c56">
+</head>
+
+<body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-emerald-50/70 dark:bg-slate-900/70 backdrop-blur-xl flex justify-between items-center px-6 py-4">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-emerald-800 dark:text-emerald-300" data-icon="spa">spa</span>
+            <h1
+                class="text-xl font-extrabold text-emerald-900 dark:text-emerald-100 font-['Plus_Jakarta_Sans'] tracking-tight">
+                Vitality</h1>
+        </div>
+        <div
+            class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border-2 border-white">
+            <img alt="User Profile" class="w-full h-full object-cover"
+                data-alt="Close up portrait of a smiling woman with natural lighting and soft blurred outdoor background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1aYhyUlfhPz4dALxFOeB97KheSZ5um_lVN27Qae__pUF0DYIocFnekwqpMtQGm8CYVC4uB9jjowAZx0xJXK6Wrd6e1OkNtzRMMV2SYtzr8GsjvadQfXXomjV73WATApojMomixyMSxfCrpt39ELYwA2fMOVef0UGfpKvjTTzK31_1U3XxZYchunZbuUUFMxb7V3bV9qiMwyxqqQ4XvyoyxEQ7Q7tyW5n4gP2eAoO7NbwGVVMNF1tje9gfhoP-Ldh-kypHc5mNaCw" />
+        </div>
+    </header>
+    <main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+        <!-- Title Section -->
+        <section class="mb-12">
+            <h2
+                class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tighter mb-4 leading-tight">
+                Calculadora de <span class="text-primary">Peso Ideal</span>
+            </h2>
+            <p class="text-on-surface-variant text-lg leading-relaxed">
+                Descubre tu rango de peso saludable basándote en tu composición corporal y características personales.
+            </p>
+        </section>
+        <!-- Main Calculator Form -->
+        <form class="space-y-8">
+            <!-- Sex Selection - Asymmetric Layout -->
+            <div class="space-y-4">
+                <label class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant ml-1">Sexo</label>
+                <div class="grid grid-cols-2 gap-4">
+                    <button
+                        class="group flex flex-col items-center justify-center p-8 bg-surface-container-low rounded-xl border-2 border-transparent hover:border-primary-container transition-all active:scale-95 duration-200"
+                        type="button">
+                        <span class="material-symbols-outlined text-5xl mb-3 text-secondary"
+                            data-icon="male">male</span>
+                        <span class="font-bold text-on-surface">Hombre</span>
+                    </button>
+                    <button
+                        class="group flex flex-col items-center justify-center p-8 bg-primary-container rounded-xl border-2 border-primary transition-all active:scale-95 duration-200"
+                        type="button">
+                        <span class="material-symbols-outlined text-5xl mb-3 text-on-primary-container active-icon"
+                            data-icon="female" style="font-variation-settings: 'FILL' 1;">female</span>
+                        <span class="font-bold text-on-primary-container">Mujer</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Inputs - Bento Grid Style -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Age Input -->
+                <div class="bg-surface-container-low p-6 rounded-lg">
+                    <label class="block text-sm font-semibold uppercase tracking-wider text-on-surface-variant mb-4"
+                        for="edad">Edad</label>
+                    <div class="relative">
+                        <input
+                            class="w-full bg-surface-container-lowest border-none rounded-md py-4 px-5 text-xl font-bold focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant"
+                            id="edad" placeholder="25" type="number" />
+                        <span
+                            class="absolute right-5 top-1/2 -translate-y-1/2 text-on-surface-variant font-medium">años</span>
+                    </div>
+                </div>
+                <!-- Height Input -->
+                <div class="bg-surface-container-low p-6 rounded-lg">
+                    <label class="block text-sm font-semibold uppercase tracking-wider text-on-surface-variant mb-4"
+                        for="altura">Altura (cm)</label>
+                    <div class="relative">
+                        <input
+                            class="w-full bg-surface-container-lowest border-none rounded-md py-4 px-5 text-xl font-bold focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant"
+                            id="altura" placeholder="170" type="number" />
+                        <span
+                            class="absolute right-5 top-1/2 -translate-y-1/2 text-on-surface-variant font-medium">cm</span>
+                    </div>
+                </div>
+                <!-- Current Weight Input - Full Width in Mobile, Nested in Desktop -->
+                <div class="md:col-span-2 bg-tertiary-container/30 p-8 rounded-xl relative overflow-hidden">
+                    <div class="relative z-10">
+                        <label class="block text-sm font-semibold uppercase tracking-wider text-on-tertiary-fixed mb-4"
+                            for="peso">Peso Actual (kg)</label>
+                        <div class="relative max-w-sm">
+                            <input
+                                class="w-full bg-surface-container-lowest border-none rounded-md py-5 px-6 text-2xl font-bold focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant"
+                                id="peso" placeholder="70.5" type="number" />
+                            <span
+                                class="absolute right-6 top-1/2 -translate-y-1/2 text-on-surface-variant font-bold">kg</span>
+                        </div>
+                    </div>
+                    <!-- Decorative Element -->
+                    <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-tertiary-fixed-dim/20 rounded-full blur-3xl">
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Section -->
+            <div class="pt-6">
+                <button
+                    class="w-full py-6 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold text-xl shadow-lg shadow-primary/20 hover:opacity-90 active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-3"
+                    type="submit">
+                    <span class="material-symbols-outlined" data-icon="calculate">calculate</span>
+                    Calcular
+                </button>
+                <p class="text-center text-on-surface-variant text-sm mt-6 font-medium">
+                    Utilizamos la fórmula de Lorentz y Devine para mayor precisión.
+                </p>
+            </div>
+        </form>
+        <!-- Decorative Info Card -->
+        <div class="mt-16 p-8 bg-secondary-container rounded-xl relative overflow-hidden">
+            <div class="flex items-start gap-6 relative z-10">
+                <div class="bg-white/40 p-4 rounded-full backdrop-blur-md">
+                    <span class="material-symbols-outlined text-secondary text-3xl"
+                        data-icon="lightbulb">lightbulb</span>
+                </div>
+                <div>
+                    <h4 class="text-on-secondary-container font-bold text-lg mb-2">¿Por qué el Peso Ideal?</h4>
+                    <p class="text-on-secondary-fixed-variant leading-relaxed">
+                        Conocer tu rango saludable te ayuda a prevenir enfermedades crónicas y mejorar tu bienestar
+                        general.
+                    </p>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 w-32 h-full opacity-10">
+                <img alt="Healthy Food" class="w-full h-full object-cover"
+                    data-alt="Arrangement of fresh vibrant vegetables and fruits on a light stone surface highlighting health and vitality"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaS3OC1p22zHBlF9-rMiRLL7hffmK1JfiWdMmSx733Ab-knuaErXCK-VDqnFOBH4Ts54-5Vhz5CzFw1HDJbtdgmxtELZtY129Xecy-Iuq17hE_ZpDAQ_YIlcmC5cS0hvrvTSBZ031O1IObL9tVLQTVKLQQ9_84480pmRfuwELJtxP2gKsHJk6mQoPCcokz25u_WZNOyE9NfLKjufR8ixw4vxQx1IVzrN6Hc7Sr25kx-nZ9GSYF4r9YjERF8s6X4z7Fiwvfjh8fKms" />
+            </div>
+        </div>
+    </main>
+    <!-- BottomNavBar -->
+    <nav
+        class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-2xl rounded-t-[3rem] shadow-[0_-4px_40px_0_rgba(0,108,86,0.05)]">
+        <a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-800/40 text-emerald-900 dark:text-emerald-100 rounded-full px-6 py-2 transition-transform duration-300 active:scale-90"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="calculate"
+                style="font-variation-settings: 'FILL' 1;">calculate</span>
+            <span
+                class="font-['Plus_Jakarta_Sans'] text-xs font-semibold tracking-wide uppercase mt-1">Calculator</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-6 py-2 hover:text-emerald-600 dark:hover:text-emerald-300 transition-transform duration-300 active:scale-90"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+            <span class="font-['Plus_Jakarta_Sans'] text-xs font-semibold tracking-wide uppercase mt-1">Insights</span>
+        </a>
+    </nav>
+    <script src="js/main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('SW registrado ✨', reg))
+                    .catch(err => console.log('Error registro SW ❌', err));
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vitality - Tu Resultado</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#727d78",
+                        "on-tertiary": "#fff7f7",
+                        "surface-bright": "#f6faf6",
+                        "primary-fixed": "#93f2d3",
+                        "tertiary-fixed": "#fdc2d4",
+                        "on-primary-container": "#005b48",
+                        "on-surface-variant": "#57615d",
+                        "background": "#f6faf6",
+                        "error": "#a83836",
+                        "surface-container-low": "#eff5f0",
+                        "tertiary-fixed-dim": "#eeb4c6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#4f2836",
+                        "primary": "#006c56",
+                        "on-primary-fixed": "#004737",
+                        "secondary-container": "#cde5ff",
+                        "error-container": "#fa746f",
+                        "on-secondary-fixed-variant": "#2c5f87",
+                        "on-error": "#fff7f6",
+                        "secondary": "#31638a",
+                        "primary-dim": "#005f4b",
+                        "surface": "#f6faf6",
+                        "surface-dim": "#d2ddd6",
+                        "on-secondary-container": "#20567c",
+                        "primary-fixed-dim": "#85e3c6",
+                        "surface-container-high": "#e1eae5",
+                        "inverse-surface": "#0a0f0d",
+                        "surface-container": "#e8f0ea",
+                        "tertiary": "#7f5261",
+                        "on-tertiary-container": "#653b4a",
+                        "error-dim": "#67040d",
+                        "primary-container": "#93f2d3",
+                        "on-tertiary-fixed-variant": "#6f4453",
+                        "tertiary-dim": "#724655",
+                        "tertiary-container": "#fdc2d4",
+                        "surface-variant": "#dae5df",
+                        "outline-variant": "#aab4af",
+                        "on-background": "#2b3530",
+                        "surface-container-highest": "#dae5df",
+                        "inverse-on-surface": "#999e9b",
+                        "on-secondary": "#f6f9ff",
+                        "on-error-container": "#6e0a12",
+                        "secondary-fixed": "#cde5ff",
+                        "inverse-primary": "#93f2d3",
+                        "on-secondary-fixed": "#004369",
+                        "secondary-dim": "#22577e",
+                        "on-primary": "#e4fff3",
+                        "surface-tint": "#006c56",
+                        "on-surface": "#2b3530",
+                        "secondary-fixed-dim": "#b1d9ff",
+                        "on-primary-fixed-variant": "#006651"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#006c56">
+</head>
+
+<body
+    class="bg-surface text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopAppBar -->
+    <header
+        class="bg-emerald-50/70 dark:bg-slate-900/70 backdrop-blur-xl docked full-width top-0 z-50 fixed top-0 left-0 w-full no-border tonal-shift bg-emerald-100/50 dark:bg-emerald-900/20">
+        <div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-emerald-800 dark:text-emerald-300"
+                    data-icon="spa">spa</span>
+                <span
+                    class="text-xl font-extrabold text-emerald-900 dark:text-emerald-100 font-['Plus_Jakarta_Sans'] tracking-tight">Vitality</span>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+                <img alt="Profile" class="w-full h-full object-cover"
+                    data-alt="Close up portrait of a smiling young woman with natural skin and glowing morning sunlight in a soft wellness setting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3gpJ9CHDUFW-fCfHcQtHa9D-2jjZcGnAYjnS2fY3rmz6ijzLzWKNN1_N9LyzFLz_8wL16IWFCk0W0cqesa2FCUlj-M9_JJV3xbfw_WVyiJKaysMrs1AHBxQkEVHrbTqKI4qHkKWpCZRctqO-Em4l09nQKmdaHV0zTbXhaL8ckD70LnFAeO85U-s7gfIhiFxmfuGZojE_ehCz-5MLUDePrH2MA8wLQFDGG-cp7EaioasLHlITOiSCCqcOqQAYoOy87cH1ae-AD76o" />
+            </div>
+        </div>
+    </header>
+    <main class="pt-24 pb-32 px-6 max-w-4xl mx-auto">
+        <!-- Result Header -->
+        <section class="mb-12 text-center">
+            <span class="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Análisis
+                Completado</span>
+            <h1 class="text-5xl font-extrabold text-on-surface tracking-tight leading-tight">Tu Resultado</h1>
+        </section>
+        <!-- Bento Grid Results -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Main Vitality Card: Ideal Weight Range -->
+            <div
+                class="md:col-span-12 lg:col-span-8 bg-tertiary-container text-on-tertiary-container rounded-xl pt-12 pb-8 px-8 relative overflow-hidden shadow-sm">
+                <div class="relative z-10">
+                    <h2 class="text-sm font-bold uppercase tracking-widest opacity-70 mb-2">Rango Recomendado</h2>
+                    <p class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Tu peso ideal es <br
+                            class="hidden md:block" /> <span class="text-primary">65 - 72 kg</span></p>
+                    <p class="text-lg opacity-90 max-w-md">Este rango se basa en tu composición corporal, altura y nivel
+                        de actividad diaria para optimizar tu bienestar longevo.</p>
+                </div>
+                <!-- Abstract Decorative Shape -->
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
+            </div>
+            <!-- Health Insight Card -->
+            <div
+                class="md:col-span-6 lg:col-span-4 bg-surface-container-low rounded-lg p-8 flex flex-col justify-between">
+                <div>
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4"
+                        data-icon="lightbulb">lightbulb</span>
+                    <h3 class="text-xl font-bold mb-3">Consejo Vital</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Prioriza proteínas magras y ejercicios de
+                        resistencia para mantener este rango de forma saludable.</p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-outline-variant/15">
+                    <p class="text-sm font-semibold text-primary">Ver plan nutricional →</p>
+                </div>
+            </div>
+            <!-- Metric Breakdown Card -->
+            <div class="md:col-span-6 lg:col-span-4 bg-secondary-container text-on-secondary-container rounded-lg p-8">
+                <h3 class="text-lg font-bold mb-4">Tu IMC Actual</h3>
+                <div class="flex items-end gap-2 mb-2">
+                    <span class="text-5xl font-extrabold tracking-tighter">22.4</span>
+                    <span class="text-sm font-medium mb-2 uppercase opacity-70 tracking-wider">Saludable</span>
+                </div>
+                <div class="w-full bg-white/30 h-2 rounded-full mt-4 overflow-hidden">
+                    <div class="bg-primary w-[65%] h-full rounded-full"></div>
+                </div>
+            </div>
+            <!-- Visual Motivation Card -->
+            <div class="md:col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-lg overflow-hidden group">
+                <div class="flex flex-col md:flex-row h-full">
+                    <div class="p-8 flex-1 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-3">Sigue así, Marina.</h3>
+                        <p class="text-on-surface-variant mb-6">Estás en un excelente punto de partida. Pequeños ajustes
+                            hoy significan grandes resultados mañana.</p>
+                        <div class="flex gap-4">
+                            <div class="flex -space-x-3">
+                                <div class="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-slate-200">
+                                    <img class="w-full h-full object-cover" data-alt="Small avatar of a person"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4UMRi4ViMfECCeHZSVF3KzWx6kliUWrU-eGzIZwrD08DgZRjF46UEeGqHe2nPmlE1PBLud92mBXKmQ6U2R1tQ6vB0vaFNaKIG2YtPoZoPHvLwSelGjWy7xqK0xQ7uN-4NOP_poJASwKIjRJTYrnpZFmqhT_ASevAu53j7XIL0T5fIHyDILyLt39QK-AmIETk0iEHyd2rKUIZStiYdEJFtjSRxH_xEX1LWfCsscqeNpy9o4P_2jLzEm7isEJAD98AKTXF7g-1YAVI" />
+                                </div>
+                                <div class="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-slate-200">
+                                    <img class="w-full h-full object-cover" data-alt="Small avatar of a person"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQOzoYgo4S3B9kWDbeQQSzjJDUUmASKmP2UlkJlE6VgCvjEcJzgIQnTyKLtAT6hDY_Dyl6X5egx4nTSbQ4FNxRKlrdR2D2XrcPWCYhfDbc0Suk2FmCtRYAj-hLZPVlLRywaGZ0-Vzmx_3YD_pBjRTShsgKKLq5tAsBNjkyf0SlVUz-xBKtp5cnm_kEYmREcu3fAuhOUmSVc1YvtgOx4NbZ59_Sf2i-XJA3YkMYTdocb5KSzCOnTxD6cKjbq2KecH2aQvKUvj3GvVw" />
+                                </div>
+                                <div
+                                    class="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center bg-primary text-[10px] text-white font-bold">
+                                    +12</div>
+                            </div>
+                            <span class="text-sm text-on-surface-variant">Únete a la comunidad</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 min-h-[200px] relative">
+                        <img alt="Yoga session"
+                            class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+                            data-alt="Person practicing peaceful yoga in a bright, minimalist studio with warm sunlight streaming through large windows"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOxJDnjO2EF6YxqTDjo-xG1tb_uFmpBkk7AZwqUurbPNLHvTewrj1zLiZvCmvn8FT_gINDk0C_Qp2uKgIQL0yYgV3ZbLwFJwB0UdGLUpVLcoTvT0ewvSUI6dpz0x0aPJebRBkqDWzxCxepmu55MEDYk-rbIX_uBRun_fIN0DRlP8tptdJ20bHuw_Z4jWRN5wOi4L9al8JgKRfAeZ3PcBsuI8hf_ArHWTSUn5DgFFNqbwVpN32EzZSlO4mfogi78agppChRz1sF_CI" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Action Button -->
+        <div class="mt-12 flex justify-center">
+            <button
+                class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-bold py-5 px-12 rounded-full text-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-1 active:scale-95 duration-200 flex items-center gap-3">
+                <span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+                Volver a calcular
+            </button>
+        </div>
+    </main>
+    <!-- BottomNavBar -->
+    <nav
+        class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-2xl shadow-[0_-4px_40px_0_rgba(0,108,86,0.05)] rounded-t-xl md:hidden">
+        <a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-800/40 text-emerald-900 dark:text-emerald-100 rounded-full px-6 py-2 transition-transform duration-300 active:scale-90"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="calculate"
+                style="font-variation-settings: 'FILL' 1;">calculate</span>
+            <span
+                class="font-['Plus_Jakarta_Sans'] text-xs font-semibold tracking-wide uppercase mt-1">Calculator</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-6 py-2 hover:text-emerald-600 dark:hover:text-emerald-300"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+            <span class="font-['Plus_Jakarta_Sans'] text-xs font-semibold tracking-wide uppercase mt-1">Insights</span>
+        </a>
+    </nav>
+    <!-- Desktop Nav (Mirroring TopAppBar/Shared Logic) -->
+    <div
+        class="hidden md:flex fixed bottom-8 left-1/2 -translate-x-1/2 glass-effect bg-white/70 rounded-full px-2 py-2 shadow-xl border border-white/20 z-50">
+        <div class="flex items-center gap-1">
+            <a class="bg-emerald-100 text-emerald-900 px-6 py-3 rounded-full flex items-center gap-2 font-bold transition-all"
+                href="#">
+                <span class="material-symbols-outlined" data-icon="calculate"
+                    style="font-variation-settings: 'FILL' 1;">calculate</span>
+                Calculator
+            </a>
+            <a class="text-slate-500 px-6 py-3 rounded-full flex items-center gap-2 font-bold hover:bg-emerald-50 transition-all"
+                href="#">
+                <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+                Insights
+            </a>
+        </div>
+    </div>
+    <script type="module" src="js/display-results.js"></script>
+</body>
+
+</html>
